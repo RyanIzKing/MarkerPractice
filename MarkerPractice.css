@@ -1,0 +1,67 @@
+
+/*Here we are establishing a selector to which that ALL h1 elements that are linked to this code via this codes file name
+in its <href> attribute will follow this selectors instuctions*/
+h1 {
+    /*Text align is used to control where the code is on the page*/
+    text-align: center;
+  }
+
+  /*This selector is used to instruct all elements that have a class container only.*/
+  /*It did this using .NOTATION for its name*/
+  .container {
+    /*Background-color is used to set the background color, here the color is set using the rgb(x,x,x) method
+    where each x can be a number referencing to a number 0-255 and the order is RED, GREEN, BLUE*/
+    background-color: rgb(255, 255, 255);
+    /*Padding is used to create space around the element that has the class container.
+    SITUATION #1)Padding: x ; when one arguement is used the padding is being applied for the top, right, bottom, left
+    SITUATION #2)Padding: x, x ; when two arguements are used the padding is being applied to the top and bottom, left and right
+    SITUATION #3)Padding: x, x, x ; when three arguements are used the padding is being applied to the top, right and left, and bottom
+    SITUATION #4)Padding: x, x, x, x; when four arguements are used the padding is being applied to the top, right, bottom and the left  */
+    padding: 10px 0;
+  }
+
+    /*This selector is used to feed instructions to elements with only the class marker*/
+  .marker {
+    /*Width property specifies how wide the element should be*/
+    width: 200px;
+    /*Height property specifies the height of the element is in px*/
+    height: 25px;
+    /*Margin property specifies an area around the content: order is margin, border, padding, content where each space type gets smaller
+    and fits within the area of the previous mentioned space type
+
+    Margin, padding, border all work the same as far as how many arguements are being used. SEE PADDING COMMENTS IN CONTAINER SELECTOR
+    */
+    margin: 10px auto;
+  }
+
+
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+
+  .cap, .sleeve {
+    display: inline-block;
+  }
+
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+  }
